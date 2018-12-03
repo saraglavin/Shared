@@ -6,6 +6,7 @@ namespace ClasserCars
     {
         static void Main(string[] args)
         {
+            //TODO: Ändra till ett språk
             Car c1 = new Car("Blå", 200);
             Car c2 = new Car();
 
@@ -33,6 +34,7 @@ namespace ClasserCars
             //c1.SetWeight(y.Trim());
 
             //Håll dig till antingen svenska eller engelska :) nu blir det the color of the first car is blå
+            //Båda bilar heter the first car
             Console.WriteLine($"The color of the first car is {c1.Color} and the weight is {c1.Weight}");
             Console.WriteLine($"The color of the first car is {c2.Color} and the weight is {c2.Weight}");
 

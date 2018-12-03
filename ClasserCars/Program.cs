@@ -10,10 +10,10 @@ namespace ClasserCars
             Car c1 = new Car("Blå", 200);
             Car c2 = new Car();
 
-            Console.WriteLine("Ange färg och vikt, separerat med komma: ");
+            Console.Write("Ange bilens färg och vikt, separerat med komma: ");
             string input = Console.ReadLine();
 
-            string[] separated = input.Split(",");
+            string[] separated = input.Split("0");
 
             string x = separated[0];
             int y = int.Parse(separated[1]);
@@ -35,8 +35,8 @@ namespace ClasserCars
 
             //Håll dig till antingen svenska eller engelska :) nu blir det the color of the first car is blå
             //Båda bilar heter the first car
-            Console.WriteLine($"The color of the first car is {c1.Color} and the weight is {c1.Weight}");
-            Console.WriteLine($"The color of the first car is {c2.Color} and the weight is {c2.Weight}");
+            Console.WriteLine($"Den första bilens färg är {c1.Color} och den väger {c1.Weight} kg");
+            Console.WriteLine($"Den andra bilens färg är {c2.Color} och den väger {c2.Weight} kg");
 
         }
     }
